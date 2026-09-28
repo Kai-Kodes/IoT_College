@@ -6,3 +6,16 @@ broker="localhost"
 
 topic="sensor/temp"
 
+payload={
+    "device_id": "ESP32_001",
+    "temperature": 25.5,
+    "humidity": 60
+}
+
+client = mqtt.Client()
+
+client.connect(broker,1883)
+
+start=time.time()
+
+client
