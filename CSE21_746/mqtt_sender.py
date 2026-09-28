@@ -18,4 +18,11 @@ client.connect(broker,1883)
 
 start=time.time()
 
-client
+client.publish(topic,json.dumps(payload))
+
+end=time.time()
+
+print("Published")
+
+print("Time taken to publish message: ", end-start, "seconds")
+
