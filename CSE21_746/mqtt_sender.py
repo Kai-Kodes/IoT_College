@@ -26,3 +26,4 @@ print("Published")
 
 print("Time taken to publish message: ", end-start, "seconds")
 
+client.disconnect()
